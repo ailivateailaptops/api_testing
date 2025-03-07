@@ -88,9 +88,9 @@ This repository contains the **API testing documentation** for the **Student Man
 2. Run requests for each endpoint.  
 3. Verify responses and status codes.  
 
-### 2️⃣ **Running Automated Tests (Django Test Framework)**  
+### 2️⃣ **Running Server**  
 ```bash
-python manage.py test
+python manage.py runserver
 
 # License
 This project is licensed under the MIT License.
