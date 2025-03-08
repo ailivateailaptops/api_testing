@@ -101,16 +101,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.BasicAuthentication',  # Enables Basic Authentication
-        'rest_framework.authentication.SessionAuthentication',  # Enables Session Authentication
-    ],
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',  # Ensures only authenticated users can access API
-    ],
-}
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
