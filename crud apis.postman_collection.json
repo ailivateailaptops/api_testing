@@ -35,12 +35,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}students/branch/",
+							"raw": "http://127.0.0.1:8000/api/students/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}students"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
-								"branch",
+								"api",
+								"students",
 								""
 							]
 						}
@@ -56,11 +62,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}student/",
+							"raw": "http://127.0.0.1:8000/api/students/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}student"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
+								"api",
+								"students",
 								""
 							]
 						}
@@ -260,7 +273,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"name\": \"venkat\",\r\n        \"age\": -9,\r\n        \"grade\": \"C+\",\r\n        \"email\": \"venkat@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"name\": \"venkat\",\r\n        \"age\": 29,\r\n        \"grade\": \"C+\",\r\n        \"email\": \"venkat@gmail.com\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -268,11 +281,18 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}student/create/",
+							"raw": "http://127.0.0.1:8000/api/students/create/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}student"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
+								"api",
+								"students",
 								"create",
 								""
 							]
@@ -292,7 +312,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"id\": 10,\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -300,11 +320,18 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}students/update/10/",
+					"raw": "http://127.0.0.1:8000/api/students/update/10/",
+					"protocol": "http",
 					"host": [
-						"{{base_url}}students"
+						"127",
+						"0",
+						"0",
+						"1"
 					],
+					"port": "8000",
 					"path": [
+						"api",
+						"students",
 						"update",
 						"10",
 						""
@@ -319,7 +346,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \r\n        \"name\": \"sai\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"sai28@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -327,13 +354,20 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}students/update/399/",
+							"raw": "http://127.0.0.1:8000/api/students/update/10/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}students"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
+								"api",
+								"students",
 								"update",
-								"399",
+								"10",
 								""
 							]
 						}
@@ -350,7 +384,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \r\n        \"name\": \"\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -358,11 +392,18 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}students/update/10/",
+							"raw": "http://127.0.0.1:8000/api/students/update/10/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}students"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
+								"api",
+								"students",
 								"update",
 								"10",
 								""
@@ -391,20 +432,21 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}students/patch/10/?",
+					"raw": "http://127.0.0.1:8000/api/students/patch/10/",
+					"protocol": "http",
 					"host": [
-						"{{base_url}}students"
+						"127",
+						"0",
+						"0",
+						"1"
 					],
+					"port": "8000",
 					"path": [
+						"api",
+						"students",
 						"patch",
 						"10",
 						""
-					],
-					"query": [
-						{
-							"key": "",
-							"value": null
-						}
 					]
 				}
 			},
@@ -492,7 +534,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"age\" : \"124\"\r\n}",
+							"raw": "{\r\n    \"grade\" : \"B\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -500,11 +542,18 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}students/patch/10/",
+							"raw": "http://127.0.0.1:8000/api/students/patch/10/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}students"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
+								"api",
+								"students",
 								"patch",
 								"10",
 								""
@@ -523,7 +572,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"grade\" : \"AB\"\r\n}",
+							"raw": "{\r\n    \"grade\" : \"B\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -531,11 +580,18 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}students/patch/10/",
+							"raw": "http://127.0.0.1:8000/api/students/patch/10/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}students"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
+								"api",
+								"students",
 								"patch",
 								"10",
 								""
@@ -555,11 +611,18 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}students/delete/7/",
+					"raw": "http://127.0.0.1:8000/api/students/delete/7/",
+					"protocol": "http",
 					"host": [
-						"{{base_url}}students"
+						"127",
+						"0",
+						"0",
+						"1"
 					],
+					"port": "8000",
 					"path": [
+						"api",
+						"students",
 						"delete",
 						"7",
 						""
@@ -573,13 +636,20 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}students/delete/799/",
+							"raw": "http://127.0.0.1:8000/api/students/delete/7/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}students"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
+								"api",
+								"students",
 								"delete",
-								"799",
+								"7",
 								""
 							]
 						}
@@ -825,12 +895,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}students/399/",
+							"raw": "http://127.0.0.1:8000/api/students/3/",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}students"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "8000",
 							"path": [
-								"399",
+								"api",
+								"students",
+								"3",
 								""
 							]
 						}
@@ -1264,43 +1341,6 @@
 				}
 			},
 			"response": []
-		}
-	],
-	"auth": {
-		"type": "basic",
-		"basic": [
-			{
-				"key": "password",
-				"value": "{{api_password}}",
-				"type": "string"
-			},
-			{
-				"key": "username",
-				"value": "{{api_username}}",
-				"type": "string"
-			}
-		]
-	},
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"packages": {},
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"packages": {},
-				"exec": [
-					""
-				]
-			}
 		}
 	]
 }
