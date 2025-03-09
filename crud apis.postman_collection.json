@@ -12,15 +12,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/students/",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/students/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"students",
@@ -35,19 +30,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/branch",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
-								""
+								"branch"
 							]
 						}
 					},
@@ -62,18 +52,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/student/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
-								"students",
+								"student",
 								""
 							]
 						}
@@ -92,7 +77,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"name\": \"venkat\",\r\n        \"age\": 29,\r\n        \"grade\": \"C+\",\r\n        \"email\": \"venkat@gmail.com\"\r\n    }",
+					"raw": "{\r\n        \"name\": \"venkat\",\r\n        \"age\": 29,\r\n        \"grade\": \"C+\",\r\n        \"email\": \"venkat1@gmail.com\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -100,15 +85,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/students/create/",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/students/create/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"students",
@@ -125,7 +105,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"jhon\",\r\n        \"age\": 19,\r\n        \"grade\": \"B+\",\r\n        \"email\": \"jhon1@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"jhon\",\r\n        \"age\": 19,\r\n        \"grade\": \"B+\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -133,15 +113,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/create/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/create/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -162,7 +137,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"jhon\",\r\n        \"age\": 19,\r\n        \"grade\": \"B+\",\r\n        \"email\": \"jhon1@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"name\": \"jhon\",\r\n        \"age\": \"twenty\",\r\n        \"grade\": \"B+\",\r\n        \"email\": \"jhon1@gmail.com\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -170,15 +145,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/create/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/create/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -199,7 +169,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"jhon\",\r\n        \"age\": 19,\r\n        \"grade\": \"B+\",\r\n        \"email\": \"jhon1@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"name\": \"jhon\",\r\n        \"age\": 19,\r\n        \"grade\": \"B+\",\r\n        \"email\": \"jhon1_gmail.com\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -207,15 +177,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/create/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/create/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -244,15 +209,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/create/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/create/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -273,7 +233,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"name\": \"venkat\",\r\n        \"age\": 29,\r\n        \"grade\": \"C+\",\r\n        \"email\": \"venkat@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"name\": \"Rahul\",\r\n        \"age\": -29,\r\n        \"grade\": \"D+\",\r\n        \"email\": \"rahul@gmail.com\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -281,15 +241,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/create/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/create/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -312,7 +267,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
+					"raw": "{\r\n        \"name\": \"anvith\",\r\n        \"age\": 23,\r\n        \"grade\": \"B+\",\r\n        \"email\": \"anvith@gmail.com\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -320,15 +275,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/students/update/10/",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/students/update/10/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"students",
@@ -346,7 +296,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -354,15 +304,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/update/10/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/update/10/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -378,13 +323,13 @@
 					"body": ""
 				},
 				{
-					"name": "TC_13 Update student with missing fields",
+					"name": "TC_13 Update student with missingFields",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"anand@gmail.com\"\r\n    }",
+							"raw": "{\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -392,15 +337,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/update/10/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/update/10/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -432,15 +372,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/students/patch/10/",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/students/patch/10/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"students",
@@ -452,7 +387,7 @@
 			},
 			"response": [
 				{
-					"name": "TC_15 Update non-existing student",
+					"name": "TC_15 Update non-existing student data",
 					"originalRequest": {
 						"method": "PATCH",
 						"header": [],
@@ -466,58 +401,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/patch/10/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/patch/1/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
 								"patch",
-								"10",
-								""
-							]
-						}
-					},
-					"_postman_previewlanguage": "Text",
-					"header": [],
-					"cookie": [],
-					"body": ""
-				},
-				{
-					"name": "TC_16 Update with invalid field",
-					"originalRequest": {
-						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"grade\" : \"B\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/patch/10/",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"students",
-								"patch",
-								"10",
+								"1",
 								""
 							]
 						}
@@ -534,7 +426,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"grade\" : \"B\"\r\n}",
+							"raw": "{\r\n    \"age\" : 121\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -542,15 +434,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/patch/10/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/patch/10/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -572,7 +459,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"grade\" : \"B\"\r\n}",
+							"raw": "{\r\n    \"grade\" : \"F\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -580,15 +467,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/patch/10/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/patch/10/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -602,6 +484,39 @@
 					"header": [],
 					"cookie": [],
 					"body": ""
+				},
+				{
+					"name": "TC_16 Update with invalid field data",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"profile\" : \"hjghbnbB\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/students/patch/10/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"students",
+								"patch",
+								"10",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
 				}
 			]
 		},
@@ -611,20 +526,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/students/delete/7/",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/students/delete/13/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"students",
 						"delete",
-						"7",
+						"13",
 						""
 					]
 				}
@@ -636,15 +546,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/delete/7/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/delete/7/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -667,15 +572,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/students/3/",
-					"protocol": "http",
+					"raw": "{{base_url}}/api/students/3/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"students",
@@ -691,15 +591,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/3/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/3/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
@@ -719,19 +614,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/3/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/thriveni/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
-								"3",
+								"thriveni",
 								""
 							]
 						}
@@ -747,19 +637,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/students/3/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/students/300/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"students",
-								"3",
+								"300",
 								""
 							]
 						}
@@ -770,6 +655,328 @@
 					"body": ""
 				}
 			]
+		},
+		{
+			"name": "{{base_url}}/api/students/thriveni/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/students/thriveni/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"thriveni",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/students/delete/7/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/students/delete/7/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"delete",
+						"7",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/students/patch/10/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"grade\" : \"F\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/students/patch/10/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"patch",
+						"10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/students/patch/10/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\" : 121\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/students/patch/10/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"patch",
+						"10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/students/patch/10/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"profile\": \"ddjhdgjkfkjd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/students/patch/10/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"patch",
+						"10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/students/patch/1/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"grade\" : \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/students/patch/1/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"patch",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/students/update/10/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"anand\",\r\n        \"age\": 28,\r\n        \"grade\": \"A+\",\r\n        \"email\": \"\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/students/update/10/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"update",
+						"10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/students/patch/1/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"grade\" : \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/students/patch/1/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"patch",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/student/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/student/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/student/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/student/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/students/patch/1/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"grade\" : \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/students/patch/1/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"patch",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
