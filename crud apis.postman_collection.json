@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "48a02608-d4b6-4529-a222-42ae73a8e801",
-		"name": "crud_patch_apis",
+		"_postman_id": "e2d0c91d-8d79-41e6-8183-c3c2d304c69c",
+		"name": "crud_patch_apis basic_auth",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42330350"
 	},
@@ -513,10 +513,10 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": null,
-					"header": null,
+					"_postman_previewlanguage": "Text",
+					"header": [],
 					"cookie": [],
-					"body": null
+					"body": ""
 				}
 			]
 		},
@@ -977,6 +977,43 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{api_password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{api_username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
