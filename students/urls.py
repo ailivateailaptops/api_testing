@@ -1,7 +1,17 @@
 from django.urls import path
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,  # For getting access & refresh tokens
+    TokenRefreshView,  # For refreshing access token
+
+)
 from .views import create_student, get_students, get_student, update_student, delete_student, partial_update_student, get_branch
 
 urlpatterns = [
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),  # Login
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),  # Refresh token
+
+
+    #api endpoints
     path('students/create/', create_student, name='create-student'),  # Create
     path('students/', get_students, name='get-students'),  # Read All
     path('students/<int:student_id>/', get_student, name='get-student'),  # Read Single
