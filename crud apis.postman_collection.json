@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "48a02608-d4b6-4529-a222-42ae73a8e801",
-		"name": "crud_patch_apis",
+		"_postman_id": "82b74909-41b9-4c87-adfc-b752f23775d4",
+		"name": "crud_patch_apis bearer_token",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42330350"
 	},
@@ -513,10 +513,10 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": null,
-					"header": null,
+					"_postman_previewlanguage": "Text",
+					"header": [],
 					"cookie": [],
-					"body": null
+					"body": ""
 				}
 			]
 		},
@@ -977,6 +977,38 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTg1OTgzLCJpYXQiOjE3NDE1ODUwODMsImp0aSI6IjZkZWYzOTE3ZTZmZTQ0ZWU5ZGY1N2QwNTkxNTZiN2Y2IiwidXNlcl9pZCI6Mn0.CX6wB7b1BcboT8vwWj-BBuNtlDbaYfA3MjCgHjvcLT0",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
