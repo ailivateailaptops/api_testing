@@ -81,10 +81,13 @@ This repository contains the **API testing documentation** for the **Student Man
 
 ---
 
-## 🛠️ How to Run Tests  
+## 🛠️ How to Run Tests with basic-auth
+
+### install dependencies
+  pip install djangorestframework
 
 ### 1️⃣ **Using Postman (Manual Testing)**  
-1. Import the **Postman Collection**.  
+1. Import the **Postman Collection and environmentvariables**.  
 2. Run requests for each endpoint.  
 3. Verify responses and status codes.  
 
