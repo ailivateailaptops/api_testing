@@ -84,8 +84,8 @@ This repository contains the **API testing documentation** for the **Student Man
 
 ## 🛠️ How to Run Tests with oauth2.0
 ### Install dependencies
-   pip install django
-   pip install django-oauth-toolkit
+  -pip install django
+  -pip install django-oauth-toolkit
 
 ### 1️⃣ **Using Postman (Manual Testing)**  
 1. Import the **Postman Collection and environment variable**.  
