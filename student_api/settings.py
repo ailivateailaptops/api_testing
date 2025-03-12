@@ -11,19 +11,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-from datetime import timedelta
-
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),  # Access token expires in 15 minutes
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),  # Refresh token expires in 7 days
-    # "ROTATE_REFRESH_TOKENS": True,  # Issue a new refresh token when refreshing access token
-    # "BLACKLIST_AFTER_ROTATION": True,  # Blacklist old refresh token when rotated
-    # "ALGORITHM": "HS256",  # JWT signing algorithm
-    # "SIGNING_KEY": SECRET_KEY,  # Use Django's secret key for signing tokens
-    # "AUTH_HEADER_TYPES": ("Bearer",),  # Authorization: Bearer <token>
-}
-
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -52,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'students',  # Add the app here
     'rest_framework',
-    'rest_framework_simplejwt',
+    'oauth2_provider',
 ]
 
 MIDDLEWARE = [
@@ -114,11 +101,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
 
+OAUTH2_PROVIDER = {
+    "ACCESS_TOKEN_EXPIRE_SECONDS": 36000,
+    "ALLOWED_GRANT_TYPES": ["password", "authorization_code", "refresh_token"],
 }
 
 # Internationalization
