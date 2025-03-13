@@ -78,13 +78,17 @@ This repository contains the **API testing documentation** for the **Student Man
 | **PATCH** | `/api/students/patch/<id>/` | Partially update student details |
 | **DELETE** | `/api/students/delete/<id>/` | Delete a student by ID |
 | **GET** | `/api/students/branch/` | Always returns an empty list |
-
+| **Admin Panel** | `/admin/` | to generate client Id  |
+| **Acess-Token** | `/o/token` | to generate acess-token  |
 ---
 
-## 🛠️ How to Run Tests  
+## 🛠️ How to Run Tests with oauth2.0
+### Install dependencies
+  -pip install django
+  -pip install django-oauth-toolkit
 
 ### 1️⃣ **Using Postman (Manual Testing)**  
-1. Import the **Postman Collection**.  
+1. Import the **Postman Collection and environment variable**.  
 2. Run requests for each endpoint.  
 3. Verify responses and status codes.  
 

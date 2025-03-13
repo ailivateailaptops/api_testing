@@ -1,0 +1,11 @@
+Create a User for Testing:
+
+If you don’t have a user, create one in the Django shell:
+
+run this command in your project terminal/command prompt:  python manage.py shell
+after that django shell opened then run the follwing code to create the user:
+
+from django.contrib.auth.models import User
+user = User.objects.create_user(username="admin_user", password="admin_user123")
+print(user)  # Verify user creation
+
