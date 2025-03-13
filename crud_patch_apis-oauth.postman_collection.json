@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "48a02608-d4b6-4529-a222-42ae73a8e801",
-		"name": "crud_patch_apis",
+		"_postman_id": "b591540f-5719-4512-9211-5c4d82f839e1",
+		"name": "crud_patch_apis-oauth",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42330350"
 	},
@@ -513,10 +513,10 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": null,
-					"header": null,
+					"_postman_previewlanguage": "Text",
+					"header": [],
 					"cookie": [],
-					"body": null
+					"body": ""
 				}
 			]
 		},
@@ -977,6 +977,127 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "generate_acess",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "om4RDMXEWQsP3XkdS6aqp9AUiHD3RPwt9OPKny36",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "w3pc8p07ExcUSAuvyIpDde0TA3EwjzO0KptmDnHc56vjsj4vff847plSR6kNzd6YOAjDiRhiYSP4BMnDnspYtUIVnZ7Aa9ZvzXHFV9HXI6klmvQ2OiBpZIuY8ohTfI0l",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin_oauthuser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin_oauth123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/o/token/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"o",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "tokenName",
+				"value": "CRUD Patch OAuth Token",
+				"type": "string"
+			},
+			{
+				"key": "refreshTokenUrl",
+				"value": "{{base_url}}/o/token",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "admin_oauth123",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "adim_oauthuser",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "w3pc8p07ExcUSAuvyIpDde0TA3EwjzO0KptmDnHc56vjsj4vff847plSR6kNzd6YOAjDiRhiYSP4BMnDnspYtUIVnZ7Aa9ZvzXHFV9HXI6klmvQ2OiBpZIuY8ohTfI0l",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "om4RDMXEWQsP3XkdS6aqp9AUiHD3RPwt9OPKny36",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{base_url}}/o/token",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "password_credentials",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }

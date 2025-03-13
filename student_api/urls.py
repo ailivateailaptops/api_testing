@@ -27,4 +27,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('students.urls')),  # Include student API routes
     path('', home),
+    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),  # OAuth2 URLs
 ]

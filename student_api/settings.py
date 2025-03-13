@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'students',  # Add the app here
     'rest_framework',
+    'oauth2_provider',
 ]
 
 MIDDLEWARE = [
@@ -101,6 +102,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+OAUTH2_PROVIDER = {
+    "ACCESS_TOKEN_EXPIRE_SECONDS": 36000,
+    "ALLOWED_GRANT_TYPES": ["password", "authorization_code", "refresh_token"],
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
